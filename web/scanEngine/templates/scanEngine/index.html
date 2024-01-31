@@ -57,7 +57,7 @@ Scan Engines
           </tr>
         </thead>
         <tbody>
-          {% for engine in engine_type.all %}
+          {% for engine in engine_type.all|slice:":2" %}
           <tr>
             <td>{{engine.id}}</td>
             <td class="text-primary">{{engine.engine_name}}</td>
