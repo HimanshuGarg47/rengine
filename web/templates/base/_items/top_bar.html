@@ -23,7 +23,7 @@
         </div>
       </form>
       </li>
-      <li class="dropdown d-none d-xl-block">
+      <!-- <li class="dropdown d-none d-xl-block">
         <a class="nav-link dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
             Projects
             <i class="mdi mdi-chevron-down ms-1"></i>
@@ -37,11 +37,13 @@
           <div class="dropdown-divider"></div>
           <a href="#" onclick="add_project_modal()" class="dropdown-item"><i class="mdi mdi-account-plus"></i> Create New Project</a>
         </div>
-      </li>
-      {% if user|can:'modify_targets' or user|can:'modify_scan_configurations' or user|can:'modify_system_configurations' or user|can:'modify_wordlists' %}
+      </li> -->
+
+
+      <!-- {% if user|can:'modify_targets' or user|can:'modify_scan_configurations' or user|can:'modify_system_configurations' or user|can:'modify_wordlists' %}
       <li class="dropdown d-none d-xl-block">
         <a class="nav-link dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-          <i class="fe-plus me-1"></i> Quick Add
+          <i class="fe-plus me-1"></i> Qck Add
           <i class="mdi mdi-chevron-down"></i>
         </a>
         <div class="dropdown-menu">
@@ -75,7 +77,7 @@
           {% endif %}
         </div>
       </li>
-      {% endif %}
+      {% endif %} -->
       <li class="dropdown d-none d-lg-inline-block topbar-dropdown">
         <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
           <i class="fe-grid noti-icon"></i>
@@ -145,7 +147,7 @@
           </a>
         </div>
       </li>
-      <li class="dropdown">
+      <!-- <li class="dropdown">
         <a class="nav-link dropdown-toggle waves-effect waves-light" href="#">
           <div class="">
             <i class="fe-sun"></i>
@@ -159,13 +161,13 @@
             <i class="fe-moon"></i>
           </div>
         </a>
-      </li>
-      <li class="dropdown top-activity-counter">
+      </li> -->
+      <!-- <li class="dropdown top-activity-counter">
         <a class="nav-link dropdown-toggle waves-effect waves-light right-bar-toggle" href="javascript:getScanStatusSidebar(project='{{current_project.slug}}', reload=false)">
           <i class="fe-activity noti-icon"></i>
           <span class="badge bg-danger noti-icon-badge"><span id="current_scan_counter">0</span></span>
         </a>
-      </li>
+      </li> -->
     </ul>
     <div class="logo-box">
       <a href="{% url 'dashboardIndex' current_project.slug %}" class="logo logo-dark text-center">

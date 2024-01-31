@@ -24,6 +24,8 @@ up:				## Build and start all services.
 build:			## Build all services.
 	${COMPOSE_PREFIX_CMD} docker-compose ${COMPOSE_ALL_FILES} build ${SERVICES}
 
+# username = himangarg and password = admin123
+
 username:		## Generate Username (Use only after make up).
 	${COMPOSE_PREFIX_CMD} docker-compose ${COMPOSE_ALL_FILES} exec web python3 manage.py createsuperuser
 

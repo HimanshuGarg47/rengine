@@ -11,11 +11,11 @@
               <i class="fe-home me-1"></i> Dashboard
             </a>
           </li>
-          <li class="nav-item dropdown {{target_data_active}}">
+          <!-- <li class="nav-item dropdown {{target_data_active}}">
             <a class="nav-link arrow-none" href="{% url 'list_projects' current_project.slug %}">
               <i class="fe-folder me-1"></i> Projects
             </a>
-          </li>
+          </li> -->
           <li class="nav-item dropdown {{target_data_active}}">
             <a class="nav-link arrow-none" href="{% url 'list_target' current_project.slug %}">
               <i class="fe-crosshair me-1"></i> Targets
@@ -41,16 +41,16 @@
               <i class="fe-alert-triangle me-1"></i> Vulnerabilities
             </a>
           </li>
-          <li class="nav-item dropdown {{recon_note_active}}">
+          <!-- <li class="nav-item dropdown {{recon_note_active}}">
             <a class="nav-link arrow-none" href="{% url 'list_note' current_project.slug %}">
               <i class="fe-check-square me-1"></i> Todo
             </a>
-          </li>
-          <li class="nav-item dropdown {{organization_active}}">
+          </li> -->
+          <!-- <li class="nav-item dropdown {{organization_active}}">
             <a class="nav-link arrow-none" href="{% url 'list_organization' current_project.slug %}">
               <i class="fe-briefcase me-1"></i> Organization
             </a>
-          </li>
+          </li> -->
           <li class="nav-item dropdown {{scan_engine_nav_active}}">
             <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-scanengine" role="button"
               data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,7 +69,7 @@
               {% endif %}
             </div>
           </li>
-          <li class="nav-item dropdown {{settings_nav_active}}">
+          <!-- <li class="nav-item dropdown {{settings_nav_active}}">
             <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-settings" role="button"
               data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fe-settings me-1"></i> Settings
@@ -96,7 +96,7 @@
               {% endif %}
             </div>
           </li>
-        </ul>
+        </ul> -->
       </div>
       <span class="badge bg-blue" data-bs-toggle="tooltip" data-bs-placement="top" title="Current Project">{{current_project.name}}</span>
     </nav>
